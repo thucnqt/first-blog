@@ -9,7 +9,7 @@ class Author (models.Model):
     profile_picture = models.ImageField()
 
     def __str__(self):
-        return self.user
+        return self.user.username
 
 class Category (models.Model):
     title = models.CharField(max_length=20)
